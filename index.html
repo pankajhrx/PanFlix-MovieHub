@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/output.css">
+    <!-- WEBSITE ICON -->
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+
+    <title>PanFlix - Your Movie Hub</title>
+</head>
+
+<body class="bg-cover bg-center bg-[url('/images/hexwave.gif')] text-red-600">
+
+    <!-- NAV BAR WLA PART -->
+    <header
+        class="bg-cover bg-center bg-[url('/images/title-back.jpg')] border-b border-red-600 text-red-600 shadow-md">
+        <div class="container mx-auto p-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-bold">Pan<span class="text-white">Flix</span></a>
+
+            <!-- BUTTONS FOR MOBILE -->
+            <button id="menu-button" class="md:hidden text-2xl">
+                ☰
+            </button>
+
+
+            <nav id="nav-menu" class="hidden md:flex space-x-6">
+                <a href="/" class="hover:text-gray-300">Home</a>
+                <a href="#movies" class="hover:text-gray-300">Movies</a>
+                <a href="#aboutus" class="hover:text-gray-300">About</a>
+                <a href="https://x.com/imheisenberg_69" target="_blank" class="hover:text-gray-300">Contact</a>
+            </nav>
+        </div>
+
+        <!-- MOBILE KE BUTTONS -->
+        <div id="mobile-menu" class="hidden bg-black text-center p-4 md:hidden">
+            <a href="/" class="block py-2 hover:text-gray-300">Home</a>
+            <a href="#movies" class="block py-2 hover:text-gray-300">Movies</a>
+            <a href="#aboutus" target="_blank" class="block py-2 hover:text-gray-300">About</a>
+            <a href="https://x.com/imheisenberg_69" target="_blank" class="block py-2 hover:text-gray-300">Contact</a>
+        </div>
+    </header>
+
+
+
+    <main class="container mx-auto p-6">
+
+        <section
+            class="bg-cover bg-center bg-[url('/images/travel.gif')] text-white rounded-lg shadow-lg p-8 mb-8 border border-red-600">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-6 lg:mb-0">
+                    <h2 class="text-4xl font-bold text-red-600 mb-4">Discover Your Next Favorite Movie</h2>
+                    <p class="text-gray-400 mb-4">
+                        Dive into a world of cinema. Be ready with your popcorns and find the latest blockbusters, timeless classics, and hidden gems
+                        curated just for you.
+                    </p>
+                    <a href="#movies"
+                        class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                        Start Exploring
+                    </a>
+                </div>
+                <div class="lg:w-1/2">
+                    <a href="https://youtu.be/HhesaQXLuRY?si=uR9jyrxTgCpeBMe6" target="_blank"><img
+                            src="images/brba4.jpg" alt="Cinema Hero"
+                            class="rounded-lg shadow-lg border border-gray-700"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEARCH WLA SECTION -->
+        <section id="genre2" class="mt-8">
+            <h3 class="text-3xl font-semibold text-red-600 mb-4">Search for Movies</h3>
+            <div class="flex flex-wrap gap-4 items-center bg-gray-800 p-4 rounded-lg shadow-lg">
+                <input id="search-input" type="text" placeholder="Search by title..."
+                    class="flex-grow bg-black border border-gray-600 text-white px-4 py-2 rounded-lg focus:outline-none focus:border-red-600">
+                <select id="genre-select"
+                    class="w-full sm:w-auto bg-black border border-gray-600 text-white px-4 py-2 rounded-lg focus:outline-none focus:border-red-600 transition ease-in-out duration-300">
+                </select>
+                <button id="search-btn"
+                    class="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    Search
+                </button>
+            </div>
+        </section>
+
+        <!-- GRID WISE -->
+        <section id="movies" class="movie mt-8">
+            <h3 class="text-3xl font-semibold text-red-600 mb-6">Popular Now</h3>
+            <div id="grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- YAHA PE MOVIE CARDS REHEGI -->
+
+            </div>
+        </section>
+
+        <!-- PREV AND NEXT PAGE KE BUTTONS -->
+        <div class="flex justify-center mt-8">
+            <button id="prev-page"
+                class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg shadow-lg mr-4 transition-transform transform hover:scale-105 disabled:opacity-50">
+                << Back
+            </button>
+            <button id="next-page"
+                class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                Next >>
+            </button>
+        </div>
+
+    </main>
+
+    <!-- FOOTER WALA PART -->
+    <footer id="aboutus" class="bg-cover bg-center bg-[url('/images/bg-gif.gif')] text-white py-8">
+        <div class="container mx-auto px-4">
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h2 class="text-lg font-bold mb-4">About Us</h2>
+                    <p class="text-gray-400 text-sm">
+                        PanFlix, Your one-stop website for your favourite movies and other series. Discover movies from
+                        around the world. Explore genres, top picks, and recommendations to find
+                        your next favorite movie. Hope you Enjoy !
+                    </p>
+                </div>
+
+                <div>
+                    <h2 class="text-lg font-bold mb-4">Quick Links</h2>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-white">Home</a></li>
+                        <li><a href="#movies" class="hover:text-white">Top Movies</a></li>
+                        <li><a href="#genre2" class="hover:text-white">Genres</a></li>
+                        <li><a href="https://x.com/imheisenberg_69" target="_blank" class="hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+
+
+                <div>
+                    <h2 class="text-lg font-bold mb-4">Join Us</h2>
+                    <form id="joinform">
+                        <input type="email" placeholder="Enter your email"
+                            class="w-full p-2 mb-2 rounded text-black focus:ring focus:ring-red-500" required>
+                        <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white p-2 rounded">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+
+            <div
+                class="mt-8 border-t border-gray-700 pt-4 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                <p>Designed and Developed By Pankaj ❤</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="https://www.facebook.com/" target="_blank" class="hover:text-white"><i class="facebook"></i> Facebook</a>
+                    <a href="https://x.com/imheisenberg_69" target="_blank" class="hover:text-white"><i class="twitter"></i> Twitter</a>
+                    <a href="https://www.instagram.com/_shayaristaan_7?igsh=NTM5azM2YnJnMXZl" target="_blank"
+                        class="hover:text-white"><i class="instagram"></i> Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
